@@ -1,9 +1,11 @@
 :root {
-    --blue1: #063a6b;
-    --blue2: #49769F;
-    --cyan: #d9ecf6;
-    --white: rgb(255, 255, 255);
-    --text-gray: rgba(116, 116, 116, 0.786);
+    --main: #3B82F6;
+    --active: #1E3A5F;
+    --back: #F8FAFC;
+    --cards: #FFFFFF;
+    --graay: #eee;
+    --main-text: #0F172A;
+    --secondary-text: #64748B;
 }
 
 .center {
@@ -16,13 +18,13 @@
 .btn {
     cursor: pointer;
     font-weight: bold;
-    background-color: rgb(241, 12, 172);
+    background-color: var(--main);
     border: none;
     transition: 0.3s;
 }
 
 .btn:hover {
-    background-color: rgb(215, 202, 185);
+    background-color: var(--active)
 }
 
 input:focus {
