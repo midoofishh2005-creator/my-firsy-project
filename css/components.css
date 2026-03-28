@@ -1,0 +1,31 @@
+:root {
+    --blue1: #063a6b;
+    --blue2: #49769F;
+    --cyan: #d9ecf6;
+    --white: rgb(255, 255, 255);
+    --text-gray: rgba(116, 116, 116, 0.786);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(241, 12, 172);
+    border: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(215, 202, 185);
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
