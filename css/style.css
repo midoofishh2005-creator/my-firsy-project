@@ -2,11 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: poppins;
+    font-family: Inter;
 }
 
+
+
 body {
-    background-color: var(--back);
+    height: 742px;
+    background-image: linear-gradient(to bottom right, white, var(--primary));
 }
 
 header {
@@ -15,25 +18,42 @@ header {
     position: relative;
 }
 
+
 h1 {
-    color: var(--main-text);
+    color: var(--primary);
+    font-family: Manrope;
+    font-size: 36px;
+    font-weight: 900;
+    text-shadow: 0.5px 0 0 currentColor;
     position: absolute;
     top: 10%;
-    left: 5%;
+    left: 2%;
+}
+
+h1::before {
+    content: "\f19d";
+    font-family: "Font Awesome 6 Free";
+    margin-right: 10px;
 }
 
 .form-box {
-    background-color: var(--card);
+    background-color: var(--white);
     width: 28%;
-    height: 550px;
+    height: 500px;
     padding: 15px;
-    border-radius: 35px;
-    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.5);
+    border-radius: 40px;
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
 }
 
 .form-box h2, .form-box p {
     text-align: center;
     font-weight: bold;
+    margin-top: 10px;
+}
+
+.form-box h2 {
+    font-size: 30px;
+    color: var(--primary);
 }
 
 .form-box p {
@@ -43,11 +63,10 @@ h1 {
 
 
 .role-switch {
-    background-color: var(--back);
+    background-color: var(--btn-back-secondary);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    background-color: var(--graay);
 
 
     width: 70%;
@@ -64,36 +83,38 @@ h1 {
 
 .role-switch label {
     text-align: center;
-    width: 40%;
-    margin: 8px 8px 5px 8px;
+    width: 50%;
+    margin: 0;
+    padding: 10px 0 0 0;
     border-radius: 20px;
     cursor: pointer;
     font-weight: 500;
-    color: var(--main-text);
+    color: var(--btn-font-secondary);
     z-index: 1;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 .role-switch input:checked + label {
-    color: var(--main-text);
-    background-color: var(--back);
+    color: var(--white);
+    background-color: var(--btn-back-primary);
 }
 
 
 
 form {
     position: relative;
-    height: 415px;
+    height: 412px;
     margin-top: 15px;
 }
 
 .form-group {
     width: 90%;
-    margin: 30px auto;
+    margin: 40px auto;
 }
 
 .form-group input {
-    background-color: var(--graay);
+    background-color: var(--btn-back-secondary);
+    color: var(--black);
     width: 100%;
     height: 45px;
     font-size: 16px;
@@ -102,7 +123,7 @@ form {
     border: none;
     border-bottom: 1px black solid;
     border-radius: 8px;
-    transition: 0.5s ease;
+    transition: 0.2s ease;
 }
 
 .form-group label {
@@ -110,28 +131,42 @@ form {
     font-weight: bold;
     font-size: 14px;
     margin-bottom: 8px;
+    margin-left: 10px;
 }
 
 .form-group input:focus {
-    border-bottom: 2px gray solid;
+    border-bottom: 2px var(--primary) solid;
     transform: scale(1.02, 1.02);
-    box-shadow: 1px 1px 2px 0px gray;
+    box-shadow: 0.5px 0px 1px 0px var(--primary);
+}
+
+.label-username::before {
+    content: "\f007";
+    font-family: "Font Awesome 6 Free";
+    margin-right: 8px;
+}
+
+.label-password::before {
+    content: "\f023";
+    font-family: "Font Awesome 6 Free";
+    margin-right: 8px;
 }
 
 
+.parent-of-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-
-
-.submit {
+.btn-primary {
     position: absolute;
     bottom: 5%;
-    left: 50%;
-    transform: translate(-50%,0);
-
     width: 50%;
+    margin: 0 auto;
     height: 40px;
 
-    border-radius: 20px;
 }
 
 .borha {
@@ -141,6 +176,7 @@ form {
 
     width: 90%;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 
@@ -152,12 +188,11 @@ form {
 
 .borha a {
     text-decoration: none;
-    color: var(--secondary-text);
-
+    color: black;
 }
 
 .borha a:hover {
-    color: var(--active);
+    color: var(--primary);
 }
 
 

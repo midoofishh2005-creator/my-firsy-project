@@ -1,13 +1,18 @@
 :root {
-    --main: #3B82F6;
-    --active: #1E3A5F;
-    --back: #F8FAFC;
-    --cards: #FFFFFF;
-    --graay: #eee;
-    --main-text: #0F172A;
-    --secondary-text: #64748B;
+    --black: black;
+    --white: white;
+    --background: #eeeef7;
+    --primary: #5D5FEF;
+    --btn-back-primary: #5D5FEF;
+    --btn-font-primary: #FFFFFF;
+    --hover: #4849DA;
+
+    --btn-back-secondary: #E0E3E5;
+    --btn-font-secondary: #747779;
+
 }
 
+/* Center Class */
 .center {
     position: absolute;
     top: 50%;
@@ -15,17 +20,38 @@
     transform: translate(-50%, -50%);
 }
 
-.btn {
+/* General Button Style */
+[class^="btn"] {
     cursor: pointer;
-    font-weight: bold;
-    background-color: var(--main);
     border: none;
-    transition: 0.3s;
+    transition: 0.2s;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+[class^="btn"]:hover {
+    background-color: var(--hover);
+    transform: scale(0.95);
 }
 
-.btn:hover {
-    background-color: var(--active)
+/* Primary Button Style */
+.btn-primary {
+    background-color: var(--btn-back-primary);
+    color: var(--btn-font-primary);
 }
+.btn-primary:hover {
+
+}
+
+/* secondary Button Style */
+.btn-secondary {
+    
+}
+
+.btn-secondary:hover {
+    color: var(--btn-font-primary);
+}
+
 
 input:focus {
     outline: none;
