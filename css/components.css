@@ -39,14 +39,6 @@
     background-color: var(--btn-back-primary);
     color: var(--btn-font-primary);
 }
-.btn-primary:hover {
-
-}
-
-/* secondary Button Style */
-.btn-secondary {
-    
-}
 
 .btn-secondary:hover {
     color: var(--btn-font-primary);
