@@ -41,7 +41,7 @@
 
             
     
-            <form action="login" method="post">
+            <form id="frm" action="login" method="post">
 
                 <section class="role-switch">
                     <input type="radio" id="student" name="role" checked>
@@ -71,7 +71,7 @@
                 </div>
                 
                 <div class="parent-of-btn">
-                    <button type="submit" class="btn-primary">Login</button>
+                    <button id="submit-button" type="submit" class="btn-primary">Login</button>
                 </div>
 
             </form>
@@ -82,9 +82,39 @@
     </main>
 
     <footer>
-        &copy; Hurghada University
+        &copy; Hurghada University     
     </footer>
         
+    <script>
+
+
+
+        document.getElementById("frm").addEventListener("submit", function(e) {
+            e.preventDefault(); 
+
+            let input = document.getElementById("username");
+            let input2 = document.getElementById("password");
+
+            let name = input.value.trim();
+            let pass = input2.value.trim();
+
+            let users = ["seif", "moamen", "borha", "bony", "omar"];
+            let passwords = ["mar", "men", "din", "???", "rom"];
+
+            let idx = users.indexOf(name);
+            if(idx == -1) {
+                input.style.border = "1px red solid";
+            }
+            else if (pass != passwords[idx]){
+                input2.style.border = "1px red solid";
+            }
+
+            else{ 
+                window.location.href = "../dashboard/dashboard.html";
+            }
+            
+        });
+    </script>
 
 </body>
 </html>

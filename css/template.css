@@ -28,10 +28,9 @@ h1::before {
 
 nav {
     height: 100vh;
-    width: 20%;
+    min-width: 20%;
     background-color: var(--white);
     border-radius: 20px;
-
     padding: 20px;
 }
 
@@ -42,6 +41,8 @@ nav {
     gap: 10px;
     margin-top: 30px;
 }
+
+
 
 
 /* ON li */
@@ -87,6 +88,14 @@ nav ul i {
 }
 
 
+nav footer {
+    font-size: 14px;
+    color: var(--btn-font-secondary);
+    position: absolute;
+    bottom: 20px;
+    left: 65px
+}
+
 
 main {
     height: 100vh;
@@ -94,3 +103,4 @@ main {
     background-color: var(--background);
 
 }
+
