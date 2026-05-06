@@ -1,0 +1,95 @@
+
+body {
+    margin: 0;
+    background-image: none;
+    background-color: var(--background);
+    display: flex;
+    font-family: Inter;
+}
+
+
+h1 {
+    color: var(--primary);
+    font-family: Manrope;
+    display: inline-block;
+    width: 100%;
+    font-size: 36px;
+    font-weight: 900;
+    text-shadow: 0.5px 0 0 currentColor;
+}
+
+h1::before {
+    content: "\f19d";
+    font-family: "Font Awesome 6 Free";
+    margin-right: 10px;
+}
+
+
+nav {
+    height: 100vh;
+    width: 20%;
+    background-color: var(--white);
+    border-radius: 20px;
+
+    padding: 20px;
+}
+
+/* ON ul */
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+
+/* ON li */
+.nav-option {  
+    list-style-type: none;
+    text-decoration: none;
+    height: 50px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--btn-font-secondary);
+    cursor: pointer;
+    padding-bottom: 40px;
+    border-radius: 15px;
+
+}
+/* .nav-option-selected::before {
+    content: "";
+} */
+
+.nav-option-selected {
+    color: var(--primary);
+    font-size: 18px;
+    background-color: var(--background);
+    border-left: var(--primary) solid 5px;
+}
+
+.nav-option:hover {
+    color: var(--primary);
+    background-color: var(--background);
+}
+
+
+/* ON a */
+.nav-option-name {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul i {
+    width: 30px;
+    color: inherit;
+}
+
+
+
+main {
+    height: 100vh;
+    width: 80%;
+    background-color: var(--background);
+
+}
