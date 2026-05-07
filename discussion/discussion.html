@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="../css/template.css">
     <link rel="stylesheet" href="discussion.css">
 </head>
+
 <body>
     <nav>
         <h1 class="logo">Dof3ty</h1>
@@ -67,9 +68,229 @@
     </nav>
 
     <main>
-        
+        <header class="top-header">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search polls, categories, or students...">
+            </div>
+            <div class="header-icons">
+                <div class="icon-wrapper">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard-content">
+            <div class="polls-section">
+                <div class="section-header">
+                    <div class="header-text">
+                        <h2>Student Voice</h2>
+                        <p>Shape your academic experience through collective voting.</p>
+                    </div>
+                    <button class="btn-primary">
+                        <i class="fa-solid fa-square-plus"></i> Create Poll
+                    </button>
+                </div>
+
+                <div class="filters-container">
+                    <div class="filter-pills">
+                        <button class="pill active">Live Polls</button>
+                        <button class="pill">Scheduling</button>
+                        <button class="pill">Course Format</button>
+                        <button class="pill">Policy Changes</button>
+                    </div>
+                    <button class="sort-btn">
+                        <i class="fa-solid fa-bars-staggered"></i> Sort by <strong>Deadline</strong>
+                    </button>
+                </div>
+
+                <div class="poll-card">
+                    <div class="poll-card-header">
+                        <div class="tags-time">
+                            <span class="tag tag-blue">SCHEDULING</span>
+                            <span class="time">Expires in 14 hours</span>
+                        </div>
+                        <div class="total-votes">
+                            <span class="number">88</span>
+                            <span class="label">TOTAL<br>VOTES</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="poll-title">Preferred Quiz Time for Web Technology</h3>
+                    <p class="poll-desc">Select the most convenient slot for the upcoming Quiz.</p>
+
+                    <div class="poll-options">
+                        <div class="option">
+                            <div class="option-info">
+                                <span>Sunday, 08:30 AM</span>
+                                <span>56%</span>
+                            </div>
+                            <div class="progress-bar"><div class="fill green" style="width: 56%;"></div></div>
+                        </div>
+                        <div class="option">
+                            <div class="option-info">
+                                <span>Tuesday, 10:00 AM</span>
+                                <span>29%</span>
+                            </div>
+                            <div class="progress-bar"><div class="fill purple" style="width: 29%;"></div></div>
+                        </div>
+                        <div class="option">
+                            <div class="option-info">
+                                <span>Wendnesday, 09:00 AM</span>
+                                <span>15%</span>
+                            </div>
+                            <div class="progress-bar"><div class="fill purple" style="width: 15%;"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="poll-footer">
+                        <div class="author">
+                            <img src="https://avatars.githubusercontent.com/u/265293214?v=4" alt="Author">
+                            <span>Posted by <strong>Moamen Aboelazm</strong></span>
+                        </div>
+                        <button class="btn-vote"><i class="fa-regular fa-circle-check"></i> Vote</button>
+                    </div>
+                </div>
+
+                <div class="poll-card">
+                    <div class="poll-card-header">
+                        <div class="tags-time">
+                            <span class="tag tag-green">DEADLINES</span>
+                            <span class="time">Ends In 20 hours</span>
+                        </div>
+                        <div class="total-votes">
+                            <span class="number">74</span>
+                            <span class="label">TOTAL<br>VOTES</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="poll-title">Project Deadline Extension</h3>
+                    <p class="poll-desc">Should we extend the "Web Project" final submission by 48 hours?</p>
+
+                    <div class="poll-options">
+                        <div class="option">
+                            <div class="option-info">
+                                <span>Yes, extend it (No penalty)</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar"><div class="fill green" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="option">
+                            <div class="option-info">
+                                <span>No, keep original deadline</span>
+                                <span>15%</span>
+                            </div>
+                            <div class="progress-bar"><div class="fill purple" style="width: 15%;"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="poll-footer">
+                        <div class="author">
+                            <img src="https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/168921b34d43c389ca90043682b90369~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=85fccf24&x-expires=1778338800&x-signature=nMnkuwmGquh%2BWSO47BOJ5aAh2mg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2" alt="Author">
+                            <span>Proposed by <strong>Mohammed Ali</strong></span>
+                        </div>
+                        <button class="btn-vote"><i class="fa-regular fa-circle-check"></i> Vote</button>
+                    </div>
+                </div>
+
+                <div class="poll-card">
+                    <div class="poll-card-header">
+                        <div class="tags-time">
+                            <span class="tag tag-purple">PREFERENCE</span>
+                            <span class="time">Expires in 2 days</span>
+                        </div>
+                        <div class="total-votes">
+                            <span class="number">63</span>
+                            <span class="label">TOTAL<br>VOTES</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="poll-title">Lecture Format: Online vs Offline</h3>
+                    <p class="poll-desc">Lecture 5: JavaScript Language and its Uses in Web Technology Fields.</p>
+
+                    <div class="poll-options">
+                        <div class="option">
+                            <div class="option-info">
+                                <span>Offline in the University</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="progress-bar"><div class="fill green" style="width: 40%;"></div></div>
+                        </div>
+                        <div class="option">
+                            <div class="option-info">
+                                <span>Online Recorded</span>
+                                <span>31%</span>
+                            </div>
+                            <div class="progress-bar"><div class="fill purple" style="width: 31%;"></div></div>
+                        </div>
+                        <div class="option">
+                            <div class="option-info">
+                                <span>Online via Zoom</span>
+                                <span>29%</span>
+                            </div>
+                            <div class="progress-bar"><div class="fill purple" style="width: 29%;"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="poll-footer">
+                        <div class="author">
+                            <img src="https://avatars.githubusercontent.com/u/182179848?v=4" alt="Author">
+                            <span>Posted by <strong>Seif Ahmed</strong></span>
+                        </div>
+                        <button class="btn-vote"><i class="fa-regular fa-circle-check"></i> Vote</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="side-widgets">
+                <div class="widget">
+                    <h4 class="widget-title"><i class="fa-solid fa-chart-bar"></i> Participation</h4>
+                    <div class="stats-list">
+                        <div class="stat-item">
+                            <span>Active Students</span>
+                            <strong>93</strong>
+                        </div>
+                        <div class="stat-item">
+                            <span>Polls Resolved</span>
+                            <strong>33</strong>
+                        </div>
+                        <div class="stat-item highlight-stat">
+                            <span>Your Votes</span>
+                            <strong>29</strong>
+                        </div>
+                    </div>
+                    <div class="upcoming-box">
+                        <span class="upcoming-label">UPCOMING EVENT</span>
+                        <h5>Show the result: May 10</h5>
+                        <p>The Poll result will be presented to the teaching assistant for a final decision regarding the project submission deadline.</p>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <h4 class="widget-title"><i class="fa-solid fa-arrow-trend-up"></i> Hottest Debates</h4>
+                    <div class="debate-list">
+                        <div class="debate-item">
+                            <strong>#Library 24h Access</strong>
+                            <span>53 votes • Intense</span>
+                        </div>
+                        <div class="debate-item">
+                            <strong>#Cafeteria Menu Update</strong>
+                            <span>87 votes • Growing</span>
+                        </div>
+                        <div class="debate-item">
+                            <strong>#Fall Semester Start</strong>
+                            <span>18 votes • New</span>
+                        </div>
+                    </div>
+                    <button class="view-history">VIEW HISTORY</button>
+                </div>
+            </div>
+        </div>
     </main>
-
-
 </body>
+
 </html>
