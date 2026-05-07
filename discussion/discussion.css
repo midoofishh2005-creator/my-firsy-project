@@ -1,73 +1,19 @@
-body {
-    display: flex;
-    background-color: #f8f9fc;
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    height: 100vh;}
 
-nav {
-    width: 250px;
-    flex-shrink: 0; }
+
 
 main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 20px 40px;
-    overflow-y: auto; }
+    overflow-y: auto; 
+}
 
-:root {
-    --primary: #4e46e5;
-    --primary-light: #ecebff;
-    --text-dark: #111827;
-    --text-gray: #6b7280;
-    --bg-white: #ffffff;
-    --green: #059669; }
-
-h2, h3, h4, h5 { 
-    font-family: 'Manrope', sans-serif;
-    margin: 0; 
-    color: var(--text-dark); }
 
 p { 
     margin: 0;
-    color: var(--text-gray); }
+    color: var(--gray); }
 
-.top-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 30px;
-    position: relative; }
 
-.search-bar {
-    background-color: #e5e7eb;
-    padding: 12px 20px;
-    border-radius: 50px;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--text-gray); }
-
-.search-bar input {
-    border: none;
-    background: transparent;
-    outline: none;
-    width: 100%;
-    font-family: 'Inter', sans-serif; }
-
-.header-icons {
-    position: absolute;
-    right: 0;
-    display: flex;
-    gap: 15px; }
-
-.icon-wrapper {
-    position: relative;
-    font-size: 20px;
-    color: black;
-    cursor: pointer;}
 
 .dashboard-content {
     display: grid;
@@ -121,13 +67,13 @@ p {
     border: none;
     border-radius: 50px;
     background-color: #e5e7eb;
-    color: var(--text-dark);
+    color: var(--dark);
     font-weight: 500;
     cursor: pointer;
     transition: 0.2s; }
 
 .pill.active { 
-    background-color: var(--text-dark); 
+    background-color: var(--dark); 
     color: white; }
 
 .sort-btn {
@@ -179,7 +125,7 @@ p {
 
 .time { 
     font-size: 13px; 
-    color: var(--text-gray); }
+    color: var(--gray); }
 
 .total-votes {
     background-color: var(--primary-light);
@@ -197,7 +143,7 @@ p {
 .label { 
     font-size: 9px; 
     font-weight: 600; 
-    color: var(--text-gray); 
+    color: var(--gray); 
     line-height: 1.1; }
 
 .poll-title { 
@@ -220,7 +166,7 @@ p {
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 6px;
-    color: var(--text-dark); }
+    color: var(--dark); }
 
 .option-info span:last-child { 
     color: var(--primary); }
@@ -254,10 +200,10 @@ p {
     align-items: center;
     gap: 10px;
     font-size: 13px;
-    color: var(--text-gray); }
+    color: var(--gray); }
 
 strong { 
-    color: var(--text-dark); }
+    color: var(--dark); }
 
 img { 
     width: 30px; 
@@ -283,7 +229,9 @@ img {
 .side-widgets {
     display: flex;
     flex-direction: column;
-    gap: 20px; }
+
+    gap: 20px; 
+}
 
 .widget {
     background-color: var(--bg-white);
@@ -312,10 +260,10 @@ img {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-    color: var(--text-gray);}
+    color: var(--gray);}
 
 .stat-item strong { 
-    color: var(--text-dark); }
+    color: var(--dark); }
 
 .highlight-stat span, .highlight-stat strong { 
     color: var(--primary); 
@@ -350,11 +298,11 @@ img {
 
 .debate-item strong { 
     font-size: 14px; 
-    color: var(--text-dark); }
+    color: var(--dark); }
 
 .debate-item span { 
     font-size: 12px; 
-    color: var(--text-gray); }
+    color: var(--gray); }
 
 .view-history {
     width: 100%;
