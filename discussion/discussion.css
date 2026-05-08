@@ -1,12 +1,7 @@
 
 
 
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto; 
-}
+
 
 
 p { 
@@ -21,19 +16,7 @@ p {
     gap: 30px;
     align-items: start; }
 
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 25px; }
 
-.section-header h2 {
-    font-size: 32px;
-     font-weight: 800; }
-
-.section-header p {
-    font-size: 15px;
-    margin-top: 5px;}
 
 .btn-primary {
     background-color: var(--primary);
