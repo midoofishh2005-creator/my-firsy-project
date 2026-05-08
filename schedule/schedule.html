@@ -83,11 +83,192 @@
         </header>
 
         <section>
+            <div class="section-header">
+                <div class="header-text">
+                    <h2 class="page-title">Lectures</h2>
+                    <p>Your academic heartbeat. View today’s journey and prepare for the week ahead.</p>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="card-header">
+                    <h3 id="my-day">Today</h3>
+                    <button class="btn-new-card">
+                        <i class="fa fa-edit"></i>
+                        New Lecture
+                    </button>
+                </div>
+                <div class="cards">
+                    <div class="card round live">
+                        <div class="card-left">
+                            <span class="time-primary live">09:00</span>
+                            <span class="time-secondary">AM - 10:30</span>
+                        </div>
+                        <span class="separator">|</span>
+                        <div class="card-right">
+                            <h3 class="live lecture">Web Technology</h3>
+                            <span class="doctor">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                                Dr. Shrouk
+                            </span>
+                            <span class="hall">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Hall 46
+                            </span>
+                        </div>
+                        <div class="live live-label">Live Now</div>
+                    </div>
 
+
+                    <div class="card round">
+                        <div class="card-left">
+                            <span class="time-primary">11:30</span>
+                            <span class="time-secondary">AM - 02:00</span>
+                        </div>
+                        <span class="separator">|</span>
+                        <div class="card-right">
+                            <h3 class="lecture">Data Structure</h3>
+                            <span class="doctor">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                                Dr. Asmaa
+                            </span>
+                            <span class="hall">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Hall 36
+                            </span>
+                        </div>
+                        <div class="live-label">Live Now</div>
+                    </div>
+
+                    <div class="card round">
+                        <div class="card-left">
+                            <span class="time-primary">02:30</span>
+                            <span class="time-secondary">PM - 04:00</span>
+                        </div>
+                        <span class="separator">|</span>
+                        <div class="card-right">
+                            <h3 class="lecture">Parallel Programming</h3>
+                            <span class="doctor">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                                Dr. Wesam
+                            </span>
+                            <span class="hall">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Hall 42
+                            </span>
+                        </div>
+                        <div class="live-label">Live Now</div>
+                    </div>
+
+                </div>
+
+                <div class="sidebar">
+                    <div class="calendar">
+                        <div class="calendar-card">
+                            
+                            <div class="calendar-header">
+                                <h4>Weekly Calendar</h4>
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                    
+                            <div class="calendar-days">
+                                <span>S</span>
+                                <span>M</span>
+                                <span>T</span>
+                                <span>W</span>
+                                <span>T</span>
+                                <span>F</span>
+                                <span>S</span>
+                            </div>
+                    
+                            <div class="calendar-dates">
+                                <button id="day1" class="active"> 10</button>
+                                <button id="day2">11</button>
+                                <button id="day3">12</button>
+                                <button id="day4">13</button>
+                                <button id="day5">14</button>
+                                <button id="day6">15</button>
+                                <button id="day7">16</button>
+                            </div>
+                    
+                        </div>
+                    </div>
+        
+                    <div class="quick-actions">
+                        <h5 class="qa-title">Quick Actions</h5>
+                    
+                        <div class="qa-item">
+                            <i class="fa-solid fa-download"></i>
+                            <span>Download Weekly PDF</span>
+                        </div>
+                    
+                        <div class="qa-item">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span>Sync with Google Calendar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            
         </section>
 
     </main>
 
+
+    <script>
+
+        let arr = document.getElementsByClassName("live");
+
+        Array.from(arr).forEach(e => {
+            if (e.classList.contains("lecture")) {
+                e.style.color = "#4e46e5"; 
+            }
+
+            else if (e.classList.contains("time-primary")) {
+                e.style.color = "#4e46e5"; 
+            }
+
+            else if (e.classList.contains("card")) {
+                e.style.borderRight = "var(--primary) 5px solid"; 
+            }
+
+            else if (e.classList.contains("live-label")) {
+                e.style.display = "inline"; 
+            }
+        });
+
+        let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+
+        let allButtons = document.querySelectorAll(".calendar-dates button");
+
+        allButtons.forEach(button => {
+            button.addEventListener("click", () => {
+
+                allButtons.forEach(btn => btn.classList.remove("active"));
+
+                button.classList.add("active");
+
+                let h = document.getElementById("my-day");
+                switch (button.id) {
+                    case "day1":
+                        h.textContent = "Today";
+                        break;
+
+                    case "day2":
+                    h.textContent = "Tomorrow";
+                    break;
+                
+                    default:
+                        h.textContent = `${daysOfWeek[Number(button.id[button.id.length-1])-1]}, Mar ${button.innerHTML}`;
+                        break;
+                }
+            });
+        });
+
+
+    </script>
 
 </body>
 </html>
